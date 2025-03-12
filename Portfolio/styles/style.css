@@ -1,0 +1,230 @@
+html {
+    font-family: 'Roboto';
+    font-size: 20px;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+p {
+    letter-spacing: 0.4px;
+}
+
+h1, 
+h2, 
+h3 {
+    text-align: center;
+    color: darkgreen;
+}
+
+h1 {
+    font-size: 50px;
+    border: 2px solid orange;
+}
+
+body {
+    max-width: 700px;
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+* {
+    max-width: 100%;
+}
+
+
+#about-me,
+#my-skills,
+#projects,
+#contact-me {
+    padding-bottom: 100px;
+}
+
+
+
+
+/* NAV-BAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid red;
+}
+
+#nav-head {
+    margin: 0;
+    font-size: 35px;
+}
+
+#nav-links {
+    display: flex;
+    gap: 15px;
+
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    #nav-links {
+        flex-direction: column; 
+        width: 100%; 
+    }
+
+    #nav-links a {
+        width: 100%; 
+        text-align: left; 
+        padding: 10px 0; 
+    }
+}
+
+/* HEADER */
+
+header {
+    padding: 200px 30px 200px 20px;
+    border: 3px solid green;
+}
+
+header > p {
+    text-align: center;
+}
+
+
+header > button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ABOUT ME */
+
+#about-me {
+    border: 3px solid red;
+}
+
+/* SKILLS */
+
+#my-skills {
+    border: 3px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill {
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: row;
+}
+
+#skills {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+
+/* PROJECTS */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid blue;
+    gap: 20px;
+}
+
+#project-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    border: 3px solid green;
+}
+
+.project {
+    padding: 20px;
+    border: 3px solid orange;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: darkgray;
+}
+
+.project > img {
+    padding-bottom: 20px;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* CONTACT ME */
+
+#contact-me {
+    text-align: center;
+    border: 3px solid orange;
+
+    display: block;
+}
+
+#contact-me > form {
+    border: 3px solid black;
+    
+    
+}
+
+#contact-me > form > * {
+    padding: 10px;
+
+
+    display: block;
+    margin: 5px auto;
+}
+
+#contact-me > form > input,
+#contact-me > form > textarea {
+    margin-bottom: 40px;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    border: 3px solid purple;
+}
+
+#copyright-text {
+    font-size: 15px;
+    letter-spacing: 0px;
+    text-align: center;
+}
